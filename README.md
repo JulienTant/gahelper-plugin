@@ -57,10 +57,3 @@ export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
 export MM_ADMIN_TOKEN=<your-token>
 make deploy
 ```
-
-If developing the webapp side, watch for changes and deploy automatically:
-```bash
-export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_TOKEN=<your-token>
-make watch
-```

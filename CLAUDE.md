@@ -72,7 +72,7 @@ plugin.
 Standard plugin-starter-template Makefile targets:
 
 ```bash
-make dist    # go build/vet + webapp build + bundle into dist/com.mattermost.gahelper-*.tar.gz
+make dist    # go build/vet + bundle into dist/com.mattermost.gahelper-*.tar.gz
 make deploy  # dist + upload to a running local server (needs deploy env vars, see Makefile)
 ```
 

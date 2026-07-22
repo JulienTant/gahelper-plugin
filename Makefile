@@ -290,10 +290,12 @@ deploy: dist
 ## Builds and installs the plugin to a server, updating the webapp automatically when changed.
 .PHONY: watch
 watch: apply server bundle
+ifneq ($(HAS_WEBAPP),)
 ifeq ($(MM_DEBUG),)
 	cd webapp && $(NPM) run build:watch
 else
 	cd webapp && $(NPM) run debug:watch
+endif
 endif
 
 ## Installs a previous built plugin with updated webpack assets to a server.
