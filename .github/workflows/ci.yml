@@ -41,7 +41,7 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --target "$GITHUB_SHA" \
             --title "Latest build ($(echo "$GITHUB_SHA" | cut -c1-7))" \
-            --notes-file dist/release-notes.md \
+            --notes "" \
             --prerelease \
             --latest=false
 
@@ -53,5 +53,5 @@ jobs:
           gh release create "$GITHUB_REF_NAME" dist/*.tar.gz \
             --repo "$GITHUB_REPOSITORY" \
             --title "$GITHUB_REF_NAME" \
-            --notes-file dist/release-notes.md \
+            --notes "" \
             || gh release upload "$GITHUB_REF_NAME" dist/*.tar.gz --repo "$GITHUB_REPOSITORY" --clobber
