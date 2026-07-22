@@ -1,4 +1,4 @@
-module github.com/mattermost/mattermost-plugin-starter-template
+module github.com/julientant/gahelper-plugin
 
 go 1.25
 

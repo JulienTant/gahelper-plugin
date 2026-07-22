@@ -1,9 +1,9 @@
 {
-    "id": "com.mattermost.plugin-starter-template",
-    "name": "Plugin Starter Template",
-    "description": "This plugin serves as a starting point for writing a Mattermost plugin.",
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-starter-template",
-    "support_url": "https://github.com/mattermost/mattermost-plugin-starter-template/issues",
+    "id": "com.mattermost.gahelper",
+    "name": "GA Helper (dev-only)",
+    "description": "Throwaway local-dev-only helper to create Global Attributes property fields with arbitrary attrs for visual testing.",
+    "homepage_url": "https://github.com/julientant/gahelper-plugin",
+    "support_url": "https://github.com/julientant/gahelper-plugin/issues",
     "icon_path": "assets/starter-template-icon.svg",
     "min_server_version": "6.2.1",
     "server": {
