@@ -37,6 +37,7 @@ ifneq ($(MM_DEBUG),)
 	GO_BUILD_GCFLAGS = -gcflags "all=-N -l"
 else
 	GO_BUILD_GCFLAGS =
+	GO_BUILD_FLAGS += -ldflags "-s -w"
 endif
 
 
